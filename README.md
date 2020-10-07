@@ -6,7 +6,7 @@ This is a fledge docker image based on Ubuntu 18.04. It is installed in its defa
 
 ### Run app
 
-> clone git repo and an run the following commands in the directory
+> clone the git repo and an run the following commands in the directory
 
 ```
     $ docker-compose build
