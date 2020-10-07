@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+
+  fledge:
+    # since arbitrary ports will be exposed, the host network is opened in this container
+    # network_mode: host
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    image: acdp/fledge
+
+    # ports are not exposed because network_mode is host
+    ports:
+      - "8081:8081"
